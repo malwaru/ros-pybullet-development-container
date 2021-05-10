@@ -1,0 +1,13 @@
+{
+	"name": "PyBullet Docker Dev Environment",
+	"dockerComposeFile": "docker-compose.yml",
+	"service": "pybullet_ros",
+	"workspaceFolder": "/home/ros_user/",
+	"shutdownAction": "stopCompose",
+	"extensions":[
+		"ms-vsliveshare.vsliveshare",
+		"ms-python.vscode-pylance",
+		"ms-python.python",
+		"njpwerner.autodocstring"
+	]
+}
