@@ -6,7 +6,8 @@ services:
             - /tmp/.X11-unix:/tmp/.X11-unix:rw
             - $HOME/.Xauthority:/root/.Xauthority:rw
             - ./../src:/home/ros_user/src
-            
+            - ./../catkin_src:/home/ros_user/catkin_ws/catkin_src
+
         environment:
             - DISPLAY=$DISPLAY
             - QT_X11_NO_MITSHM=1
