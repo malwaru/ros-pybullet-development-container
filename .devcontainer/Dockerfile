@@ -6,10 +6,10 @@ RUN pip3 install pybullet opencv-python osrf-pycommon
 
 
 # nvidia-container-runtime
-ENV NVIDIA_VISIBLE_DEVICES \
-    ${NVIDIA_VISIBLE_DEVICES:-all}
-ENV NVIDIA_DRIVER_CAPABILITIES \
-    ${NVIDIA_DRIVER_CAPABILITIES:+$NVIDIA_DRIVER_CAPABILITIES,}graphics
+#ENV NVIDIA_VISIBLE_DEVICES \
+#    ${NVIDIA_VISIBLE_DEVICES:-all}
+#ENV NVIDIA_DRIVER_CAPABILITIES \
+#    ${NVIDIA_DRIVER_CAPABILITIES:+$NVIDIA_DRIVER_CAPABILITIES,}graphics
 
 ARG UNAME=ros_user
 ARG WS_DIR=/home/$UNAME/catkin_ws
@@ -25,7 +25,7 @@ RUN useradd -m -s /bin/bash -N -u $UID $UNAME && \
 USER $UNAME
 WORKDIR $WS_DIR/src
 
-RUN git clone https://github.com/HBRS-SDP/pybullet_ros.git
+#RUN git clone https://github.com/HBRS-SDP/pybullet_ros.git
 WORKDIR $WS_DIR
 RUN catkin init
 RUN catkin config --extend /opt/ros/noetic/
