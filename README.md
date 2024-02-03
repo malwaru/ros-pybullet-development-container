@@ -11,6 +11,16 @@ The `src/` folder is mounted directly into the dev container and should be used 
 
 Note:
 
+To use NVIDIA graphics card you have to follow three steps
+1. Install the correct version nvidia graphics card driver in your local pc
+2. Install CUDA
+3. Install nvidia-container-toolkit
+
+All instruction can be found in the following link
+https://github.com/NVIDIA/nvidia-container-toolkit?tab=readme-ov-file
+
+Given below are instruction that was used previously and may not be relevent. 
+
 To use NVIDIA graphics card install the nvidia-docker2 by following the instructions in the Setting up NVIDIA Container Toolkit¶ section of the following link
 
 1. Make sure you have done a docker pull of nvidia/cuda  
